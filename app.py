@@ -62,7 +62,7 @@ else:
 
     # 카드 박스 느낌의 출력
     st.markdown(f"### `[{current_item['era']}]` ({st.session_state.current_idx + 1}/{len(filtered_data)})")
-    st.markdown(f"<div style='text-align: center; font-size: 24px; font-weight: bold; margin: 20px 0;'>Q. {current_item['q']}</div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='text-align: center; font-size: 24px; font-weight: bold; margin: 30px 0;'>Q. {current_item['q']}</div>", unsafe_allow_html=True)
 
     # 정답 보기 토글
     show_ans = st.checkbox("정답 보기", key="show_ans_box")
